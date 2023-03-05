@@ -1,0 +1,15 @@
+        implicit none
+        real::a,b,,c,d,e,x,y
+        write(*,*)" input a,b,c,d,e"
+        read(*,*)a,b,c,d,e
+        y=5
+        if (a<b.and.c<d)then
+        x=y+a
+        elseif(a<b.and.c>d)then
+        x=y-a
+        elseif(a>b.and.c>d)then
+        x=y+b
+        write(*,*),x,y
+        endif
+        pause
+        end
